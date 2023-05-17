@@ -31,26 +31,6 @@
     },
   });
 
-  const swiper = new Swiper(".swiper", {
-    direction: "vertical",
-    loop: true,
-
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
-
   const Accordion = {
     settings: {
       // Expand the first item by default
@@ -149,10 +129,6 @@
     function initializeClock(endtime) {
       var timeinterval = setInterval(function () {
         var t = getTimeRemaining(endtime);
-        document.querySelector(".days > .value").innerText = t.days;
-        document.querySelector(".hours > .value").innerText = t.hours;
-        document.querySelector(".minutes > .value").innerText = t.minutes;
-        document.querySelector(".seconds > .value").innerText = t.seconds;
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
