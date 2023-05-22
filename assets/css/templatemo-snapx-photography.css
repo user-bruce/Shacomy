@@ -3022,4 +3022,18 @@ body {
   width: 28px;
   height: 28px;
   margin: 0px 5px;
+  color:white;
+}
+
+.nav-social-item li, .nav-social-item li a{
+  background-color: white !important;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.nav-social-item li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

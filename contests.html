@@ -38,12 +38,9 @@ https://templatemo.com/tm-576-snapx-photography
           <div class="row">
               <div class="col-12">
                   <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
                       <a href="index.html" class="logo">
-                          <img src="assets/images/shacomy.png" alt="SnapX Photography Template">
+                          <img src="assets/images/shac_logo.jpg" alt="ShacommyLogo">
                       </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li><a href="index.html">Home</a></li>
                           <li>
@@ -51,6 +48,14 @@ https://templatemo.com/tm-576-snapx-photography
                           </li>
                           <li><a href="index.html">Products and Services</a></li>
                           <li><a href="contests.html">Porfolio</a></li>
+                          <ul class="nav-social-item">
+                            <li>
+                              <a><img class="social-media-icon" src="assets/images/soc1.png" alt=""></a>
+                              <a><img class="social-media-icon" src="assets/images/soc2.png" alt=""></a>
+                              <a><img class="social-media-icon" src="assets/images/soc3.png" alt=""></a>
+                              <a><img class="social-media-icon" src="assets/images/soc4.png" alt=""></a>
+                            </li>
+                          </ul>
                       </ul>   
                       <div class="border-button">
                         <a href="users.html" class="sign-in-up"><i class="fa fa-phone"></i> Contact Us</a>
@@ -315,6 +320,26 @@ https://templatemo.com/tm-576-snapx-photography
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyCmLzrCotxSYxwaK3XJMy4xCw6hQ1tHxm0",
+      authDomain: "shaccomy.firebaseapp.com",
+      projectId: "shaccomy",
+      storageBucket: "shaccomy.appspot.com",
+      messagingSenderId: "410418240393",
+      appId: "1:410418240393:web:7bffcee2a8e5d1cb965f58",
+      measurementId: "G-B942F69GGP"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
   </body>
 </html>
