@@ -243,7 +243,7 @@ Header Style
 }
 
 .header-area {
-  background-color: #fff;
+  background-color: #F7F7F7;
   position: absolute;
   height: 70px;
   top: 0;
@@ -257,16 +257,22 @@ Header Style
 }
 
 .header-area .main-nav {
-  min-height: 80px;
+  min-height: 70px;
   background: transparent;
   display: flex
 }
 
+
+
 @media (max-width: 520px){
+  .mobile-zero-padding{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
   .header-area .main-nav {
     min-height: 80px;
     background: transparent;
-    display: flex;
+    display: flex !important;
     padding-left: 0px;
     padding-right: 0px;
     align-items: center !important;
@@ -279,11 +285,12 @@ Header Style
     margin-left: 0px !important;
     top: 0px !important;
     width: 150px !important;
+    height: 95% !important;
   }
 
   .header-area .main-nav .logo img{
-    width: 145px;
-    height: auto;
+    width: 135px;
+    height: 70%;
   }
 }
 
@@ -2891,6 +2898,10 @@ body {
   .logo{
     width: 80px;
   }
+  .shacommy-logo{
+  width: 45px !important;
+  height: 35px !important;
+}
 }
 
 @media(max-width: 520px){
@@ -3036,4 +3047,55 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.shacommy-logo{
+  width: 150px;
+  height: 58px;
+}
+
+@media (max-width: 520px){
+  .shacommy-logo{
+    width: 104px !important;
+    height: 74px;
+  }
+
+  .main-nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 768px){
+  .shacommy-logo{
+    width: 130px !important;
+    height: 68px;
+  }
+
+  .main-nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 1000px){
+  .main-nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 2000px){
+  .main-nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
 }
