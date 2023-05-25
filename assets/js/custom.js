@@ -257,6 +257,7 @@
   if ($(".menu-trigger").length) {
     $(".menu-trigger").on("click", function () {
       $(this).toggleClass("active");
+      $(".shacommy-logo").toggleClass("menu-expandend");
       $(".header-area .nav").slideToggle(200);
     });
   }
