@@ -3111,6 +3111,7 @@ body {
   height: 28px;
   margin: 0px 5px;
   color: white;
+  cursor: pointer;
 }
 
 .nav-social-item li, .nav-social-item li a {
@@ -3130,7 +3131,17 @@ body {
   }
 }
 
+.about-paragraph{
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
 @media(max-width: 1400px) {
+.about-paragraph{
+  margin-left: 90px !important;
+  margin-right: 90px !important;
+}
+
   .nav-social-item li, .nav-social-item li a {
     background-color: white !important;
     color: white;
@@ -3150,7 +3161,18 @@ body {
   height: 58px;
 }
 
+
 @media (max-width: 520px) {
+  .about-paragraph{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .about-us-container{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
   .shacommy-logo {
     width: 104px !important;
     height: 74px;
